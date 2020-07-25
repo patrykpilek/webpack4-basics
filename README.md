@@ -14,3 +14,7 @@ First loaders for CSS files.
 # loaderHTML #
 Better errors and loaders for HTML and images.
 ``` 
+```
+# babel-basics #
+Babel basic
+``` 
