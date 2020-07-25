@@ -26,3 +26,7 @@ Babel polyfills, transforms and presets.
 # express #
 Diy webpack dev server with express middleware.
 ``` 
+```
+# reload #
+Hot reloading both client and server with nodemon.
+``` 
