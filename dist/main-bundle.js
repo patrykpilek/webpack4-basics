@@ -121,18 +121,6 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/images/link.jpg":
-/*!*****************************!*\
-  !*** ./src/images/link.jpg ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/link.jpg\");\n\n//# sourceURL=webpack:///./src/images/link.jpg?");
-
-/***/ }),
-
 /***/ "./src/index.html":
 /*!************************!*\
   !*** ./src/index.html ***!
@@ -163,7 +151,7 @@ eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtim
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./main.css */ \"./src/main.css\")\r\n__webpack_require__(/*! ./images/link.jpg */ \"./src/images/link.jpg\")\r\n__webpack_require__(/*! ./index.html */ \"./src/index.html\")\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__(/*! ./main.css */ \"./src/main.css\");\n\n__webpack_require__(/*! ./index.html */ \"./src/index.html\");\n\nvar a = function a() {\n  console.log(\"Hello from the future!\");\n};\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
