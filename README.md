@@ -16,5 +16,9 @@ Better errors and loaders for HTML and images.
 ``` 
 ```
 # babel-basics #
-Babel basic
+Babel basic.
+``` 
+```
+# babel-pol-tra-pre #
+Babel polyfills, transforms and presets.
 ``` 
