@@ -34,3 +34,7 @@ Hot reloading both client and server with nodemon.
 # debugging #
 Debugging node with chrome DevTools.
 ``` 
+```
+# react #
+React stateful reloading.
+``` 
