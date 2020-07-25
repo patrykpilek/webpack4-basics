@@ -30,3 +30,7 @@ Diy webpack dev server with express middleware.
 # reload #
 Hot reloading both client and server with nodemon.
 ``` 
+```
+# debugging #
+Debugging node with chrome DevTools.
+``` 
