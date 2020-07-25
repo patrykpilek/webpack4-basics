@@ -2,7 +2,10 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        main: "./src/main.js"
+        main: [
+            "@babel/polyfill",
+            "./src/main.js"
+        ]
     },
     mode: "development",
     output: {
@@ -21,7 +24,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: "babel-loader"
+                        loader: "babel-loader",
+                        options: {
+                            presets: ['@babel/preset-env']
+                        }
                     }
                 ]
             },
