@@ -1,3 +1,6 @@
-require("./main.css")
-require("./images/link.jpg")
-require("./index.html")
+require("./main.css");
+require("./index.html");
+
+var a = () => {
+    console.log("Hello from the future!");
+}
