@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
 const webpack = require("webpack");
 
@@ -51,18 +52,6 @@ module.exports = {
                 test: /\.html$/,
                 use: [
                     {
-                        loader: "file-loader",
-                        options: {
-                            name: "[name].[ext]"
-                        }
-                    },
-                    {
-                        loader: "extract-loader",
-                        options: {
-                            publicPath: "../"
-                        }
-                    },
-                    {
                         loader: "html-loader",
                         options: {
                             attributes: {
@@ -92,6 +81,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+        })
     ]
 }
