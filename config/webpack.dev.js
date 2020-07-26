@@ -1,13 +1,10 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: [
-            "@babel/polyfill",
-            "./src/main.js"
-        ]
+        main: ["./src/main.js"]
     },
     mode: "development",
     output: {
@@ -69,22 +66,31 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|gif|png)$/,
+                test: /\.(png|jpe?g|gif)$/,
                 use: [
                     {
                         loader: "file-loader",
                         options: {
-                            name: "images/[name].[ext]"
+                            name: "images/[name]-[hash:8].[ext]"
                         }
                     }
                 ]
             },
+            {
+                test: /\.pug$/,
+                use: [
+                    {
+                        loader: 'pug-loader'
+                    }
+                ]
+            }
         ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
-            template: "./src/index.html"
+            template: "./src/index.pug",
+            title: "Title Test"
         })
     ]
 }
