@@ -89,8 +89,9 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
-            template: "./src/index.pug",
-            title: "Title Test"
+            template: "./src/index.ejs",
+            title: "Title Ejs",
+            filename: 'images/[name]-[hash:8].[ext]'
         })
     ]
 }
